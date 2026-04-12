@@ -1,0 +1,119 @@
+# LLM leader decision prompt template (kept also in code for convenience)
+Below is a contract clause (or a risk point). Based solely on this content, please choose an option from A/B/C for each of the 4 dimensions and output your judgment in JSON.
+
+【Start of Clause】
+{{CLAUSE_TEXT}}
+【End of Clause】
+
+Please answer Questions 1–4 in order according to the criteria below.
+For each question, you may choose only one option from A/B/C that best fits.
+
+——————————
+**Question 1: Nature of Legal Consequences (Validity / Compliance)**
+
+**Question 1:** If the risk corresponding to this clause does materialize, what is the most likely direct legal consequence?
+
+**Category A (High Risk)** — Select A if any of the following apply:
+1. Highly likely to cause the entire contract, main provisions, or key clauses to become invalid or to be rescinded;
+2. Highly likely to trigger criminal liability;
+3. Highly likely to result in severe administrative measures such as revocation/suspension of key licenses, orders to cease operations, or prohibition from trading.
+
+**Category B (Medium Risk)** — Select B if A does not apply, but any of the following apply:
+1. Will not invalidate the entire contract, but the relevant clause is likely to be deemed partially invalid, restricted in applicability, or subject to regulatory rectification;
+2. May lead to administrative fines, orders to rectify, regulatory interviews, etc., but unlikely to affect core qualifications or licenses.
+
+**Category C (Low Risk)** — Select C if neither A nor B applies, and:
+1. Mainly triggers disputes over performance, interpretation, or ordinary breach of contract;
+2. Does not fundamentally affect contract validity and does not involve criminal liability or significant administrative penalties.
+
+Please select one option from A/B/C as the value for **“Q1”**.
+
+——————————
+**Question 2: Scope and Limit of Liability (Predictability / Exposure)**
+
+**Question 2:** How does the contract define the liability scope and cap for the corresponding risk?
+
+**Category A (High Risk)** — Select A if any of the following apply:
+1. Uses terms like “all / any / every loss and claim,” covering direct and indirect losses and third-party claims, with **no liability cap**;
+2. States “bear all consequences / bear liability permanently,” making the liability scope impossible to estimate;
+3. Provides **unlimited liability** for certain risks (e.g., IP infringement, data breach), and such risk is **not extremely unlikely** in this business model.
+
+**Category B (Medium Risk)** — Select B if A does not apply, but any of the following apply:
+1. There is a liability cap, but it is relatively high, such as:
+   - More than 100% of the total contract price; or
+   - A fixed amount significantly exceeding the transaction scale;
+2. Liability includes reasonable third-party claims and some indirect costs, but only **within the liability cap**;
+3. Unlimited liability is set for certain special items, but strict triggering conditions and control measures exist (e.g., compliance procedures, technical safeguards, approval mechanisms).
+
+**Category C (Low Risk)** — Select C only if **all** of the following apply:
+1. Liability has a clear and calculable cap, generally not exceeding 100% of the total contract price;
+2. Liability is limited to direct losses, explicitly excluding loss of expected profits, goodwill loss, indirect losses, etc.;
+3. Third-party claims or special risks, if covered, are still subject to the liability cap.
+
+Please select one option from A/B/C as the value for **“Q2”**.
+
+——————————
+**Question 3: Allocation of Rights, Obligations, and Control**
+
+**Question 3:** How does this clause distribute rights, obligations, and control between the parties?
+
+**Category A (High Risk)** — Select A if any of the following apply:
+1. Grants the counterparty unilateral authority over key decisions, interpretations, modifications, termination, pricing adjustments, etc., leaving little or no veto power or remedy for your side;
+2. Allows the counterparty to determine on its own that you are in breach, immediately terminate the contract, and demand full compensation **without objective standards** or third-party judgment;
+3. Allows the counterparty to unilaterally modify core terms (e.g., price, service scope, technical standards), and you cannot refuse or can only passively accept, with no reasonable limitations.
+
+**Category B (Medium Risk)** — Select B if A does not apply, but any of the following apply:
+1. The counterparty has certain unilateral rights (e.g., partial adjustment rights, unilateral termination under specific conditions), but objective conditions are clearly defined;
+2. Exercise of unilateral rights requires prior written notice, reasonable cure period, negotiation procedures, etc., giving your side a substantive opportunity to remedy;
+3. Some non-core matters (e.g., service time, delivery details) may be adjusted unilaterally, but core rights and obligations require mutual agreement.
+
+**Category C (Low Risk)** — Select C if neither A nor B applies, and:
+1. Rights and obligations are generally balanced or mutually constrained; major matters require joint consent or third-party/objective standards;
+2. Any unilateral rights (e.g., interpretation, termination, adjustment) have clear boundaries, conditions, and procedural safeguards;
+3. The clause does not place major risks on one side nor grant excessive unilateral control to the other.
+
+Please select one option from A/B/C as the value for **“Q3”**.
+
+——————————
+**Question 4: Remediability and Long-Term Impact if Risk Occurs**
+
+**Question 4:** If the risk materializes, what is the likely difficulty of remediation and its lasting impact?
+
+**Category A (High Risk)** — Select A if any of the following apply:
+1. It is difficult to restore the state before the risk occurred through remedial performance or supplementary agreements within reasonable time/cost;
+2. It will have lasting impacts on core assets or long-term business capabilities, such as:
+   - Core IP is permanently transferred to the counterparty with no effective return or re-license mechanism;
+   - Exclusivity terms restrict cooperation with others for a long period;
+   - Insufficient confidentiality protection causing permanent loss of trade secret value once disclosed.
+
+**Category B (Medium Risk)** — Select B if A does not apply, but any of the following apply:
+1. The risk can be remedied via supplementary agreements or renegotiation, but requires **substantial** renegotiation;
+2. Remediation requires multilayer approvals or expert assessments (e.g., security review, compliance review, price reassessment, additional guarantees), implying significant time/cost;
+3. During remediation, project progress, delivery timelines, or business opportunities are significantly affected, though the overall business remains sustainable.
+
+**Category C (Low Risk)** — Select C if neither A nor B applies, and:
+1. The risk can typically be remedied through a simple supplementary agreement, workflow adjustment, or internal management measures in a short period;
+2. Only short-term, controllable increases in cost or decreases in efficiency arise;
+3. No lasting impact on the core transaction structure, core assets, or long-term cooperation.
+
+Please select one option from A/B/C as the value for **“Q4”**.
+
+——————————
+**【Final Output Requirement】**
+
+Output **only one JSON object**, with **no explanatory text** and no extra fields.
+Format (example values only):
+
+```json
+{
+  "Q1": "A",
+  "Q2": "B",
+  "Q3": "C",
+  "Q4": "C"
+}
+
+You must ensure:
+
+Each field value must be exactly the string "A", "B", or "C";
+
+Do not output any other fields, comments, or natural-language explanations.

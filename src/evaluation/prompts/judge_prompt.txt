@@ -1,0 +1,188 @@
+You are a **strict and professional contract quality review expert**. Based on the “final full contract text,” please score the contract from the following dimensions and comply with the **quantitative scoring rules** below:
+
+Dimensions to be scored (each scored from 0–100, integer only):
+
+* clarity: clarity of terms (whether clear, unambiguous, properly defined terminology)
+* rigor: logical rigor (complete structure, correct cross-references, consistent definitions and usage)
+* balance: balance of rights and obligations — evaluating whether Party A and Party B have symmetrical rights/obligations, whether risk allocation is fair, and whether liabilities match benefits. This applies to general review scenarios for non-one-sided contracts.
+* professionalism: language professionalism (legal terminology, formal drafting, stable wording)
+
+---
+
+### I. General Scoring Rules (apply to all dimensions)
+
+1. **You must first determine the appropriate score range, then fine-tune within that range.** No arbitrary scoring is allowed:
+
+   * 90–100: Excellent
+   * 80–89: Good
+   * 70–79: Above average
+   * 60–69: Barely acceptable
+   * 40–59: Clearly problematic
+   * 0–39: Seriously deficient
+
+2. After determining the score range:
+
+   * Fully meets the description of that range, almost no improvement needed → near the high end (e.g., 96–100)
+   * Basically meets it, but with minor issues → near the midpoint (e.g., 83, 86)
+   * Barely qualifies → near the lower bound (e.g., 80, 71, 60)
+
+3. Each score must clearly state **1–2 “evidence points”** (specific clause features or defects) within one sentence in the `rationale`.
+
+4. If scores differ significantly across dimensions, you must give a reasonable explanation (e.g., high professionalism but low rigor).
+
+---
+
+### II. Dimension-specific Scoring Standards
+
+#### 1. clarity (Clarity of Clauses)
+
+* **90–100 (Extremely high clarity)**
+  * Key terms are clearly and consistently defined (“Services,” “Liquidated Damages,” “Force Majeure,” etc.).
+  * Rights, obligations, conditions, deadlines, amounts, etc., are expressed in **specific, enforceable terms** (numbers, dates, formulas, verifiable standards).
+  * Almost no ambiguity; complex clauses include subdivisions, examples, or definitions to eliminate confusion.
+
+* **80–89 (Generally clear with minor issues)**
+  * Most key concepts, time frames, amounts, and liabilities are clearly described.
+  * 1–2 expressions may be abstract or slightly ambiguous, but not enough to impair execution.
+  * Terminology is mostly consistent with no major conflicts.
+
+* **70–79 (Basically clear but with noticeable vague areas)**
+  * Main structure and obligations are understandable, but some important clauses lack definitions or include vague terms (“reasonable,” “appropriate,” “material,” etc., without standards).
+  * Inconsistent terminology in isolated instances, though meaning remains inferable.
+  * Some impact on execution, but still workable with supplementary negotiation.
+
+* **60–69 (Barely usable with considerable ambiguity)**
+  * Key content (scope of rights, payment terms, liability, etc.) contains multiple unclear or undefined concepts.
+  * Same concept appears under different names; references unclear.
+  * Execution requires substantial supplementary explanation or reliance on industry practice.
+
+* **40–59 (Poor clarity)**
+  * Many essential clauses lack operational criteria (“according to industry practice,” “subject to mutual negotiation,” etc.).
+  * Terminology is chaotic, lacking necessary definitions; boundaries of rights and obligations are unclear.
+  * Even careful readers would struggle to fully understand the rules.
+
+* **0–39 (Severely unclear)**
+  * Disorganized expression, lacking structure and consistent terminology; contradictory statements appear.
+  * Most critical content vague or undefined, making outcomes unpredictable.
+  * Contract is almost unusable in practice.
+
+---
+
+#### 2. rigor (Logical Rigor)
+
+* **90–100 (Highly rigorous)**
+  * Complete chapter structure, clear hierarchy (General — Specific — Supplementary, etc.), smooth logic.
+  * Definitions, clauses, and cross-references are precise; no incorrect or missing references.
+  * Strong internal consistency across clauses with no substantive conflicts.
+
+* **80–89 (Generally rigorous with minor technical issues)**
+  * Structure is reasonable and relationships mostly clear.
+  * May contain a few minor numbering or formatting issues that do not affect understanding.
+  * Minor inconsistencies exist but can be logically reconciled.
+
+* **70–79 (Some rigor but with significant structural or detail issues)**
+  * Overall usable structure but some chapters poorly arranged (e.g., scattered key terms, repetition).
+  * Several unclear or erroneous cross-references requiring interpretation.
+  * Occasional logical jumps or inconsistencies that may be exploited in disputes.
+
+* **60–69 (Loose logic)**
+  * Mixed or disorganized chapter structure lacking a clear logic flow.
+  * Frequent incorrect references or inconsistent provisions for the same matter.
+  * Multiple logical gaps requiring supplementary interpretation during execution.
+
+* **40–59 (Insufficient rigor)**
+  * Clauses lack systematic organization; logical order missing (e.g., remedies scattered, contradictory liabilities).
+  * References chaotic or missing, making it difficult to locate or apply rules.
+  * Contract cannot reliably support dispute resolution.
+
+* **0–39 (Almost no rigor)**
+  * Resembles a “pile of clauses,” without logical structure.
+  * Many contradictory or overlapping clauses with unclear applicability.
+  * Practically unusable as a legal document.
+
+---
+
+#### 3. balance (Balance of Rights and Obligations)
+
+* **90–100 (Excellent balance)**
+  * Parties’ rights and obligations are fully symmetrical; risks allocated fairly according to responsibility.
+  * Any special rights are supported by corresponding obligations; no unilateral exemptions/privileges.
+  * Damages/remedies apply equally and fairly to both parties.
+
+* **80–89 (Good balance)**
+  * Overall balanced with only 1–2 minor non-core tilts (e.g., slight difference in damage caps).
+  * Fair allocation of major risks with no significant unfair benefit.
+
+* **70–79 (Above-average balance)**
+  * Mostly balanced but with some local tilts, e.g., procedural burdens uneven.
+  * Core rights such as payment, delivery, quality remain symmetrical.
+
+* **60–69 (Barely balanced)**
+  * Appears symmetrical but hides practical tilts (e.g., clear payment terms for A but vague quality acceptance for B).
+  * Certain risk allocations (e.g., force majeure consequences) favor one party.
+
+* **40–59 (Insufficient balance)**
+  * Several clear tilts, such as liability caps only benefiting one side.
+  * One party may have unilateral termination rights without reciprocal remedies.
+
+* **0–39 (Seriously unbalanced)**
+  * Extreme asymmetry: one party bears most risk without adequate protection.
+  * Contract effectively becomes a single-party protection tool.
+
+---
+
+#### 4. professionalism (Language & Professionalism)
+
+* **90–100 (Highly professional)**
+  * Language aligns with legal and industry drafting conventions; no colloquial or improper terms.
+  * Definitions, structure, and wording consistent with professional templates.
+  * Punctuation, numbering, and formatting standardized with almost no errors.
+
+* **80–89 (Good professional quality)**
+  * Mostly professional wording with minor ordinary expressions.
+  * Format and numbering largely consistent with occasional small mistakes.
+  * Stable and formal tone.
+
+* **70–79 (Moderately professional with issues)**
+  * Generally formal but with some vague or non-professional expressions.
+  * Noticeable formatting, punctuation, or grammar issues.
+  * Occasional colloquial or inconsistent usage.
+
+* **60–69 (Barely meeting formal standards)**
+  * Mix of formal and colloquial language; professionalism not uniform.
+  * Several spelling/grammar/punctuation errors.
+  * Ambiguous everyday expressions appear.
+
+* **40–59 (Insufficient professionalism)**
+  * More like an informal memo than a legal document.
+  * Messy formatting and numbering; frequent errors.
+  * Lacks seriousness expected in legal drafting.
+
+* **0–39 (Unprofessional)**
+  * Highly colloquial; lacks legal terminology or structure.
+  * Error-ridden and difficult to read.
+  * Unlikely to be accepted as a valid legal document.
+
+---
+
+### III. Output Format Requirements (unchanged)
+
+Please **output JSON only** (no extra text) in the following structure (example):
+
+```json
+{{
+  "scores": {{
+    "clarity": 0-100,
+    "rigor": 0-100,
+    "balance": 0-100,
+    "professionalism": 0-100
+  }},
+  "rationale": "Use 2–4 sentences to strictly explain the scoring rationale, referencing evidence points such as 'overly broad exemption clause' or 'undefined key terms'. Avoid vague statements."
+}}
+
+Contract Full Text:\
+---
+{contract_text}
+---
+
+

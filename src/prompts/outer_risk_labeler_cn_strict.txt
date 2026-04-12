@@ -1,0 +1,4 @@
+# prompts_ext/outer_risk_labeler_cn_strict.txt
+Only generate risk categories based on 'evidenced clauses/terms' in the original contract text; Each category must be accompanied by 1-3 pieces of evidence (original text fragments).
+If the evidence is insufficient, it is better to be lacking than excessive. New categories are allowed, but evidence must also be provided for the addition.
+General categories (IP/data/confidentiality/SLA/breach/termination/dispute/jurisdiction/insurance, etc.) will not be output without evidence.
